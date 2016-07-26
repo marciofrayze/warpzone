@@ -1,0 +1,35 @@
+MODULOS DO JOGO WARP ZONE
+-------------------------
+
+Nome do modulo      : Warp Zone
+Nome do arquivo     : WarpZone.bb
+Utiliza nos modulos : 
+Objetivo(s)         : 	- Inicializa variaveis adicionais
+			- Faz o looping principal
+
+Nome do modulo      : Setup
+Nome do arquivo     : wz_setup.bb
+Utiliza nos modulos : warpzone.bb
+Objetivo(s)         : 	- Inicializa variais globais (nem todas)
+ 		      	- Altera resolução para 800x600
+		      	- Carrega imagens e arquivos de sons
+
+Nome do modulo      : Engine de Tiles (funções)
+Nome do arquivo     : wz_engine.bb
+Utiliza nos modulos : wz_setup.bb
+Objetivo(s)         : 	- Inicializa as funções da engine de tiles
+
+Nome do modulo      : Introdução do WZ
+Nome do arquivo     : wz_intro.bb
+Utiliza nos modulos : warpzone.bb
+Objetivo(s)         : 	- Mostra a tela inicial do jogo
+			- Começa a tocar a musica
+
+Nome do modulo      : Função do WZ
+Nome do arquivo     : wz_funcs.bb
+Utiliza nos modulos : wz_setup.bb
+Objetivo(s)         : 	- Inicializa todas as demais funções do jogo
+OBS : Esse modulos deveria ser dividido em mais modulos.. mas como inicialmente não havia feito em modulos,
+ficou meio complicado e resolvi deixar tudo em um único arquivo. Esta meio confuso.. talvez um dia eu arrume !
+
+
